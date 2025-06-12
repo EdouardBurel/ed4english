@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
@@ -8,6 +8,17 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth >= 768) {
+      setNav(false);
+    }
+  };
+
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
@@ -15,13 +26,21 @@ const Navbar = () => {
       </h1>
 
       <ul className="hidden md:flex">
-        <li className="p-4 font-body text-base ">Accueil</li>
-        <li className="p-4 font-body text-base ">Nos Formations</li>
-        <li className="p-4 font-body text-base ">À Propos</li>
-        <li className="p-4 font-body text-base ">Contact</li>
+        <li className="p-4 whitespace-nowrap hover:bg-[#00df9a] hover:text-black rounded-md transition duration-300 ease-in-out cursor-pointer">
+          Accueil
+        </li>
+        <li className="p-4 whitespace-nowrap hover:bg-[#00df9a] hover:text-black rounded-md transition duration-300 ease-in-out cursor-pointer">
+          Nos Formations
+        </li>
+        <li className="p-4 whitespace-nowrap hover:bg-[#00df9a] hover:text-black rounded-md transition duration-300 ease-in-out cursor-pointer">
+          À Propos
+        </li>
+        <li className="p-4 whitespace-nowrap hover:bg-[#00df9a] hover:text-black rounded-md transition duration-300 ease-in-out cursor-pointer">
+          Contact
+        </li>
       </ul>
 
-      <div onClick={handleNav} className="block md:hidden z-50">
+      <div onClick={handleNav} className="block md:hidden z-50 cursor-pointer">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
@@ -33,11 +52,17 @@ const Navbar = () => {
         <h1 className="text-3xl font-bold text-[#00df9a] m-4 font-heading">
           ED4ENGLISH
         </h1>
-        <ul className="uppercase">
-          <li className="p-4 border-b border-gray-600">Accueil</li>
-          <li className="p-4 border-b border-gray-600">Nos Formations</li>
-          <li className="p-4 border-b border-gray-600">À Propos</li>
-          <li className="p-4 border-b border-gray-600">Contact</li>
+        <ul className="uppercase space-y-2">
+          {["Accueil", "Nos Formations", "À Propos", "Contact"].map(
+            (text, index) => (
+              <li
+                key={index}
+                className="p-4 whitespace-nowrap cursor-pointer bg-transparent border-b border-gray-600 rounded-md hover:bg-[#00df9a] hover:text-black transition duration-300 ease-in-out"
+              >
+                {text}
+              </li>
+            )
+          )}
         </ul>
       </div>
     </div>
