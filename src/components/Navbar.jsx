@@ -1,0 +1,47 @@
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  return (
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
+      <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
+        ED4ENGLISH.
+      </h1>
+
+      <ul className="hidden md:flex">
+        <li className="p-4 font-body text-base ">Accueil</li>
+        <li className="p-4 font-body text-base ">Nos Formations</li>
+        <li className="p-4 font-body text-base ">À Propos</li>
+        <li className="p-4 font-body text-base ">Contact</li>
+      </ul>
+
+      <div onClick={handleNav} className="block md:hidden z-50">
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      </div>
+
+      <div
+        className={`fixed top-0 left-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] p-4 transform transition-all duration-500 ease-in-out ${
+          nav ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <h1 className="text-3xl font-bold text-[#00df9a] m-4 font-heading">
+          ED4ENGLISH
+        </h1>
+        <ul className="uppercase">
+          <li className="p-4 border-b border-gray-600">Accueil</li>
+          <li className="p-4 border-b border-gray-600">Nos Formations</li>
+          <li className="p-4 border-b border-gray-600">À Propos</li>
+          <li className="p-4 border-b border-gray-600">Contact</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
