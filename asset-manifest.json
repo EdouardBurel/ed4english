@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ed4english/static/css/main.c3460a60.css",
+    "main.js": "/ed4english/static/js/main.3be14f5a.js",
+    "static/js/453.9ff8eede.chunk.js": "/ed4english/static/js/453.9ff8eede.chunk.js",
+    "static/media/profil.png": "/ed4english/static/media/profil.8bd2865a5eb9076f13da.png",
+    "static/media/icon2.png": "/ed4english/static/media/icon2.7b48de218f9cb1fc9159.png",
+    "static/media/teaching.png": "/ed4english/static/media/teaching.345a6738b5b0bfe0a6cb.png",
+    "static/media/icon1.png": "/ed4english/static/media/icon1.5ea86c951ca8c6e20216.png",
+    "index.html": "/ed4english/index.html",
+    "main.c3460a60.css.map": "/ed4english/static/css/main.c3460a60.css.map",
+    "main.3be14f5a.js.map": "/ed4english/static/js/main.3be14f5a.js.map",
+    "453.9ff8eede.chunk.js.map": "/ed4english/static/js/453.9ff8eede.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3460a60.css",
+    "static/js/main.3be14f5a.js"
+  ]
+}
