@@ -5,15 +5,19 @@ import Analytics from './components/Analytics';
 import Options from './components/Options';
 import Footer from './components/Footer';
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Hero />
-      <Analytics />
-      <Options />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/options" element={<Options />} />
+        <Route path="/about" element={<Analytics />} />
+        <Route path="/contact" element={<Footer />} />
+      </Routes>
+    </Router>
   );
 }
 
