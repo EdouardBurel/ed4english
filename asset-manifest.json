@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ed4english/static/css/main.400c79d9.css",
-    "main.js": "/ed4english/static/js/main.163724c2.js",
+    "main.css": "/ed4english/static/css/main.eb2e5f15.css",
+    "main.js": "/ed4english/static/js/main.61307a81.js",
     "static/js/453.9ff8eede.chunk.js": "/ed4english/static/js/453.9ff8eede.chunk.js",
-    "static/media/profil.png": "/ed4english/static/media/profil.8bd2865a5eb9076f13da.png",
+    "static/media/profil1.png": "/ed4english/static/media/profil1.aa140ee59da7488f829e.png",
     "static/media/icon2.png": "/ed4english/static/media/icon2.7b48de218f9cb1fc9159.png",
     "static/media/teaching.png": "/ed4english/static/media/teaching.345a6738b5b0bfe0a6cb.png",
     "static/media/icon1.png": "/ed4english/static/media/icon1.5ea86c951ca8c6e20216.png",
     "index.html": "/ed4english/index.html",
-    "main.400c79d9.css.map": "/ed4english/static/css/main.400c79d9.css.map",
-    "main.163724c2.js.map": "/ed4english/static/js/main.163724c2.js.map",
+    "main.eb2e5f15.css.map": "/ed4english/static/css/main.eb2e5f15.css.map",
+    "main.61307a81.js.map": "/ed4english/static/js/main.61307a81.js.map",
     "453.9ff8eede.chunk.js.map": "/ed4english/static/js/453.9ff8eede.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.400c79d9.css",
-    "static/js/main.163724c2.js"
+    "static/css/main.eb2e5f15.css",
+    "static/js/main.61307a81.js"
   ]
 }
