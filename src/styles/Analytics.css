@@ -1,0 +1,11 @@
+.flag-bg {
+  background: repeating-linear-gradient(
+    45deg,
+    #012169,
+    #012169 10px,
+    #FFFFFF 10px,
+    #FFFFFF 20px,
+    #C8102E 20px,
+    #C8102E 30px
+  );
+}
