@@ -1,69 +1,80 @@
 import React from "react";
-import Teaching from "../assets/teaching.png"; // Assurez-vous que cette image est appropriée
-import Profile from "../assets/profil1.png"; // Assurez-vous que cette image est votre photo
+import Teaching from "../assets/teaching.png";
+import Profile from "../assets/profil2.jpeg";
+import Footer from "./Footer";
 
 function Analytics() {
   return (
     <div>
-      <div className="w-full bg-[#1D3B34] py-16 px-4">
-        <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-          <img
-            className=" w-[500px] mx-auto my-4 rounded-md"
-            src={Teaching}
-            alt="/"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-5xl text-[#A7D7B9] font-bold">
+      <div className="w-full bg-[#1D3B34] pt-28 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
+          {/* Image */}
+          <div className="flex justify-center md:justify-start">
+            <img
+              className="w-64 sm:w-80 md:w-[400px] lg:w-[500px] rounded-lg shadow-lg object-cover"
+              src={Teaching}
+              alt="formation ED4ENGLISH"
+            />
+          </div>
+
+          {/* Text */}
+          <div className="flex flex-col text-center md:text-left">
+            <p className="text-3xl sm:text-4xl md:text-5xl text-[#A7D7B9] font-bold mb-4">
               Formations Dynamiques et Immersives
             </p>
-            <h1 className="text-white md:text-4xl sm:text-3xl text-2xl font-bold py-2">
+            <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
               Améliorez votre expression orale avec confiance
             </h1>
-            <p className="text-[#A7D7B9]">
-              Chez ED4ENGLISH, nous concevons des programmes de formation en
-              anglais sur mesure, adaptés à vos besoins spécifiques. Que vous
-              soyez un professionnel cherchant à perfectionner votre anglais des
-              affaires ou un particulier désireux de voyager sereinement, nos
-              méthodes interactives et notre approche pédagogique ciblée vous
-              garantiront des progrès rapides et durables.
+            <p className="text-[#A7D7B9] text-base sm:text-lg leading-relaxed">
+              Chez <strong>ED4ENGLISH</strong>, nous concevons des programmes de
+              formation en anglais sur mesure, adaptés à vos besoins
+              spécifiques. Que vous soyez un professionnel cherchant à
+              perfectionner votre anglais des affaires ou un particulier
+              désireux de voyager sereinement, nos méthodes interactives et
+              notre approche pédagogique ciblée vous garantiront des progrès
+              rapides et durables.
             </p>
-            <button className=" text-[#FDFDFD] bg-[#A7D7B9] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
-              Voir Nos Méthodes
-            </button>
           </div>
         </div>
       </div>
+
       <div className="w-full bg-[#A7D7B9] py-16 px-4">
-        <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 items-center gap-4 md:gap-12">
-          <div className="flex justify-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
+          {/* Image Section */}
+          <div className="flex justify-center md:justify-end">
             <img
-              className="w-32 h-44 sm:w-40 sm:h-56 md:w-52 md:h-72 lg:w-64 lg:h-80 object-cover rounded-md"
+              className="w-32 sm:w-40 md:w-52 lg:w-64 xl:w-72 aspect-[3/4] object-cover rounded-lg shadow-lg"
               src={Profile}
               alt="Édouard"
             />
           </div>
 
-          <div className="flex flex-col justify-center md:justify-start">
-            <p className="text-4xl md:text-5xl text-[#1D3B34] font-bold mb-2">
+          {/* Text Section */}
+          <div className="flex flex-col text-center md:text-left px-2">
+            <p className="text-3xl sm:text-4xl md:text-5xl text-[#1D3B34] font-bold mb-2">
               Qui suis-je ?
             </p>
-            <h1 className="text-black md:text-4xl sm:text-3xl text-2xl font-semibold italic mb-4">
-              Hello, je suis Edouard
+            <h1 className="text-black text-2xl sm:text-3xl md:text-4xl font-semibold italic mb-4">
+              Hello, je suis Édouard
             </h1>
-            <p className="text-[#1D3B34] leading-relaxed">
+            <p className="text-[#1D3B34] text-base sm:text-lg leading-relaxed">
               En tant que formateur et passionné d'anglais, j'ai accompagné de
               nombreux apprenants dans l'atteinte de leurs objectifs
               linguistiques. Mon approche est basée sur l'écoute active et la
               création d'un environnement d'apprentissage stimulant où chacun
-              peut s'exprimer librement. Fort d'une expérience significative
-              dans l'enseignement et la formation professionnelle, je m'engage à
-              vous fournir les outils et la confiance nécessaires pour maîtriser
-              l'anglais et l'utiliser efficacement dans votre vie personnelle et
-              professionnelle.
+              peut s'exprimer librement.
+              <br />
+              <br />
+              Fort d'une expérience significative dans l'enseignement et la
+              formation professionnelle, je m'engage à vous fournir les outils
+              et la confiance nécessaires pour maîtriser l'anglais et l'utiliser
+              efficacement dans votre vie personnelle et professionnelle.
             </p>
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
