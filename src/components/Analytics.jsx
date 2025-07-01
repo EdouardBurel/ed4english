@@ -1,12 +1,13 @@
 import React from "react";
 import Teaching from "../assets/teaching.png";
-import Profile from "../assets/profil2.jpeg";
+import Profile from "../assets/profil01.jpeg";
 import Footer from "./Footer";
 
 function Analytics() {
   return (
     <div>
-      <div className="w-full bg-[#1D3B34] pt-28 px-4">
+      {/* Section Formations */}
+      <div className="w-full bg-[#1D3B34] pt-28 px-4 mb-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
           {/* Image */}
           <div className="flex justify-center md:justify-start">
@@ -25,7 +26,7 @@ function Analytics() {
             <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
               Améliorez votre expression orale avec confiance
             </h1>
-            <p className="text-[#A7D7B9] text-base sm:text-lg leading-relaxed">
+            <p className="text-[#A7D7B9] text-base sm:text-lg leading-relaxed mb-10">
               Chez <strong>ED4ENGLISH</strong>, nous concevons des programmes de
               formation en anglais sur mesure, adaptés à vos besoins
               spécifiques. Que vous soyez un professionnel cherchant à
@@ -38,10 +39,11 @@ function Analytics() {
         </div>
       </div>
 
+      {/* Section Profil */}
       <div className="w-full bg-[#A7D7B9] py-16 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
           {/* Image Section */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center">
             <img
               className="w-32 sm:w-40 md:w-52 lg:w-64 xl:w-72 aspect-[3/4] object-cover rounded-lg shadow-lg"
               src={Profile}

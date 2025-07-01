@@ -8,8 +8,8 @@ export default function Contact() {
       <div className="flex flex-col md:flex-row w-full">
         {/* Left: Illustration + Text */}
         <div className="md:w-1/2 bg-[#fef6ec] flex flex-col items-center justify-center p-10 text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#1D1D1D] mb-4">
-            LET’S START WORKING
+          <h2 className="text-4xl md:text-5xl font-extrabold font-heading text-[#1D1D1D] mb-4">
+            LET’S GET STARTED
           </h2>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
             How about starting a chat?

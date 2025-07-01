@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTwitterSquare, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Added LinkedIn and Email icons for professionalism
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -48,19 +49,21 @@ function Footer() {
             <h6 className="font-medium text-gray-400 mb-4">Navigation</h6>{" "}
             {/* Changed to Navigation for clarity */}
             <ul>
-              <li className="py-2 text-sm hover:text-[#A7D7B9] transition-colors duration-200 cursor-pointer">
-                Nos Formations
-              </li>
+              <Link to="/options">
+                <li className="py-2 text-sm hover:text-[#A7D7B9] transition-colors duration-200 cursor-pointer">
+                  Nos Formations
+                </li>
+              </Link>
+              <Link to={"/about"}>
               <li className="py-2 text-sm hover:text-[#A7D7B9] transition-colors duration-200 cursor-pointer">
                 À Propos
               </li>
+              </Link>
+              <Link to={"/contact"}>
               <li className="py-2 text-sm hover:text-[#A7D7B9] transition-colors duration-200 cursor-pointer">
                 Contact
               </li>
-              <li className="py-2 text-sm hover:text-[#A7D7B9] transition-colors duration-200 cursor-pointer">
-                FAQ
-              </li>{" "}
-              {/* Added FAQ as a common footer item */}
+              </Link>
             </ul>
           </div>
           <div>
